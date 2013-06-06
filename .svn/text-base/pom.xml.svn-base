@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.photon.phresco</groupId>
+    <artifactId>WindowsPhone-windowsphone</artifactId>
+    <name>WindowsPhone-windowsphone</name>
+    <version>1.0</version>
+    <build>
+        <sourceDirectory>source</sourceDirectory>
+        <directory>do_not_checkin/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>com.photon.phresco.plugins</groupId>
+                <artifactId>phresco-maven-plugin</artifactId>
+                <version>2.3.0.8000</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.sonar-plugins.dotnet</groupId>
+                <artifactId>maven-dotnet-plugin</artifactId>
+                <version>0.1</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>ci</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-clean-plugin</artifactId>
+                        <version>2.5</version>
+                        <executions>
+                            <execution>
+<id>default-clean</id>
+<phase>pre-clean</phase>
+<goals>
+    <goal>clean</goal>
+</goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <excludeDefaultDirectories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</excludeDefaultDirectories>
+                            <filesets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<fileset>
+    <directory>do_not_checkin/build</directory>
+    <includes>
+        <include>**/*</include>
+                </includes>
+    <followSymlinks>false</followSymlinks>
+              </fileset>
+<fileset>
+    <directory>do_not_checkin/archives</directory>
+    <includes>
+        <include>**/*</include>
+                                    </includes>
+    <followSymlinks>false</followSymlinks>
+                            </fileset>
+              </filesets>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    <repositories>
+        <repository>
+            <id>photon</id>
+            <url>http://172.16.17.226:8080/repository/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <properties>
+        <phresco.module.source.dir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/source/src/Common/SharedAssemblies</phresco.module.source.dir>
+        <sonar.language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">cs</sonar.language>
+        <visual.studio.solution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">source/WP.sln</visual.studio.solution>
+        <sonar.dotnet.4.0.sdk.directory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Windows\Microsoft.NET\Framework\v4.0.30319</sonar.dotnet.4.0.sdk.directory>
+        <sonar.dotnet.version xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.0</sonar.dotnet.version>
+        <sonar.ndeps.mode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">skip</sonar.ndeps.mode>
+        <sonar.fxcop.mode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">skip</sonar.fxcop.mode>
+        <phresco.eclipse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</phresco.eclipse>
+        <phresco.unitTest.dir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/source/test/do_not_checkin/build</phresco.unitTest.dir>
+        <phresco.unitTest.report.dir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/source/test/do_not_checkin/build/report</phresco.unitTest.report.dir>
+        <phresco.unitTest.testsuite.xpath xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/testsuite</phresco.unitTest.testsuite.xpath>
+        <phresco.unitTest.testcase.path xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/testcase</phresco.unitTest.testcase.path>
+        <phresco.manualTest.report.dir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/test/manual</phresco.manualTest.report.dir>
+    </properties>
+</project>

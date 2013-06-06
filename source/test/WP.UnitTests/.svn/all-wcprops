@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests
+END
+MainPage.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/MainPage.xaml.cs
+END
+WP.UnitTests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/WP.UnitTests.csproj
+END
+App.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/App.xaml
+END
+LocalizedStrings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/LocalizedStrings.cs
+END
+App.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/App.xaml.cs
+END
+AllTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/AllTests.cs
+END
+MainPage.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repos/phresco-svn-projects/!svn/ver/3823/ci/2.3.0.8000/windows/WindowsPhone-windowsphone/source/test/WP.UnitTests/MainPage.xaml
+END
